@@ -1,0 +1,50 @@
+.subcarousel {
+  width: 90%;
+  height: 500px;
+  padding: 40px 0;
+  span {
+    cursor: pointer;
+    right: 3%;
+    padding: 12px 29px;
+    bottom: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 43px;
+    font-size: 12px;
+    height: 18px;
+    position: absolute;
+    color: #fff;
+    background-color: #da2f68;
+    z-index: 1000000000000000000000000;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    height: 324px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .box__content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    .p_name {
+      font-size: 20px;
+      color: #fff;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .p_text {
+      color: #fff;
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
+}

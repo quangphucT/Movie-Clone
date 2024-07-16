@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba($color: #000000, $alpha: 0.49);
+  position: fixed;
+  z-index: 1000;
+  backdrop-filter: blur(3.3px);
+  &__search{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    display: flex;
+    left: 0;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 200px;
+    cursor: pointer;
+    input{
+      font-size: 19px;
+      outline: none;
+      border: none;
+      flex-grow: 1;
+
+    }
+    &.active{
+      top: 100%;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      &:hover{
+        color: #da2f68;
+      }
+      a {
+       
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+          color: #da2f68;
+        }
+      }
+    }
+
+  }
+}

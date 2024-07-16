@@ -1,0 +1,49 @@
+.login{
+    &__video{
+        
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        transform: scale(1.6);
+    }
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login__container{
+            width: 500px;
+            height: 450px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .login__content{
+            
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1{
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                input{
+                    padding: 8px 10px;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                }
+                button{
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+    
+}
